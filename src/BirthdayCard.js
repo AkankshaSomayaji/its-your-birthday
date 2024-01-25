@@ -38,7 +38,6 @@ const BirthdayCard = () => {
     <Page>
       <div className='card-main'>
         <span className='card-wish'>Make a wish!!!</span>
-        <span className='card-cake'>Here will be the cake with candles</span>
         <div>
           {currentPage!==0 && <CakeWithCandles candleCount={decodedData.age}/>}
         </div>
