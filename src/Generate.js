@@ -23,7 +23,7 @@ function GeneratePage() {
     e.preventDefault();
 
     const encodedData = btoa(JSON.stringify(formData));
-    setGeneratedURL(`/result?data=${encodedData}`);
+    setGeneratedURL(window.location.href+`result?data=${encodedData}`);
     setShowPopup(true);
   };
 
