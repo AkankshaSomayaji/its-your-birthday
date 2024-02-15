@@ -66,7 +66,11 @@ const BirthdayCard = () => {
         style={{backgroundImage: `url(./images/page_bg.png)`}}
         ref={flipBookRef}
       >
-        {pages}
+        {pages.map((page, index) => (
+          <div key={index}>
+            {page}
+          </div>
+        ))}
       </HTMLFlipBook>
     </div>
   );
